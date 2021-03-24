@@ -1,0 +1,19 @@
+{
+  "roster": [
+    {
+      "name": "Peter Van Poppel",
+      "age": 27,
+      "id": 1
+    },
+    {
+      "name": "Mathieu Alavalverd",
+      "age": 23,
+      "id": 2
+    },
+    {
+      "name": "Jonathan Vaugirard",
+      "age": 32,
+      "id": 3
+    }
+  ]
+}

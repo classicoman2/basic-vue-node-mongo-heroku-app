@@ -20,29 +20,30 @@ export default {
   mounted() {
     // Url changes depending whether you're in local or heroku
 
-console.info(process.env.NODE_BASE)
-
-    let url =
-      process.env.NODE_BASE == "local"
-        ? "http://localhost:5000"
-        : window.location.href;
-
-    console.log(url);
+    let url = this.getAPIURL() + "/roster";
 
     //fetch
-    fetch(url + "/roster")
+    fetch(url)
       .then((response) => response.json())
       .then((roster) => {
         console.log(roster[0].name);
         this.cyclists = roster;
       });
   },
+
+  methods: {
+    getAPIURL() {
+      if (window.location.href.split("://")[1].split(":")[0] === "localhost")
+        return "http://localhost:5000";
+      else return window.location.href.split("/#")[0];
+    },
+  },
 };
 </script>
 
 <style scoped>
 li {
-    list-style: none;
-    line-height: 40px;
+  list-style: none;
+  line-height: 40px;
 }
 </style>

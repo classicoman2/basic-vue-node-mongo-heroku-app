@@ -1,2 +1,2 @@
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{f820:function(e,n,o){"use strict";o.r(n);var t=o("7a23"),s={class:"about"},i=Object(t["f"])("h1",null,"About",-1),u=Object(t["f"])("p",null,"This is a very simple application with Vue.js 3, node.js, json-server/mongo and deployed in Heroku",-1);function a(e,n){return Object(t["o"])(),Object(t["d"])("div",s,[i,u])}const c={};c.render=a;n["default"]=c}}]);
-//# sourceMappingURL=about.38fa4c43.js.map
+//# sourceMappingURL=about.561009b1.js.map
